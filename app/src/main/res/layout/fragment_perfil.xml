@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".vista.menu.fragments.PerfilFragment">
+
+    <RelativeLayout
+        android:id="@+id/layoutFoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:transitionName="@string/imgUserTransition"
+            android:layout_centerInParent="true"
+            app:civ_border_color="@android:color/darker_gray"
+            app:civ_border_width="0.5dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCambiarFotoPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleX="0"
+            android:scaleY="0"
+            android:src="@drawable/ic_camera"
+            android:tint="@android:color/white"
+            app:fabSize="normal"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/layoutFoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_person"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNombreUsuarioPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@null"
+                    android:hint="Nombre"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_info_perfil"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnActualizarNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/ripple_circular"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_info"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Info."
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEstadoUsuarioPerfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@null"
+                    android:hint="Estado"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnActualizarEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@drawable/ripple_circular"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_call_gray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"/>
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@null"
+                    android:hint="+34 699 32 XX XX"
+                    android:imeOptions="actionDone"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

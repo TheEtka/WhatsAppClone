@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:fillViewport="true"
+    tools:context=".vista.menu.fragments.AjustesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutDatosUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:transitionName="@string/imgUserTransition"
+                android:layout_marginEnd="16dp"
+                app:civ_border_color="@android:color/darker_gray"
+                app:civ_border_width="0.5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtNombreUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Ioan"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/txtEstadoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Programando :D"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesCuenta"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_cuenta"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Cuenta"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesChats"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_contactos"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Chats"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesNotificaciones"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_notificaciones"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Notificaciones"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesDatosAlmacenamiento"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_data"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Datos y almacenamiento"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesAyuda"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_ayuda"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Ayuda"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAjustesInvitarAmigos"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="?selectableItemBackground"
+            android:drawableStart="@drawable/ic_invitar_amigos"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/colorGray"
+            android:paddingStart="16dp"
+            android:paddingEnd="0dp"
+            android:text="Invitar amigos"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

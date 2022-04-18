@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="giphy_api_key">K6uDnMnCcI9iWSHA66BFn6hYuuqCL0Vm</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_info_llamadas">Para llamar a contactor que tienen\nWhatsApp, toca $ en la parte inferior\n de la pantalla</string>
+    <string name="txt_info_perfil">Este no es un nombre de usuario ni un PIN. Este nombre será visible para tus contactos de WhatsApp</string>
+    <string name="imgUserTransition">imgUser</string>
+    <string name="txt_info_estado"><![CDATA[Para compartir tu estado, toca\n $ o % en la parte inferior\n de la pantatalla.]]></string>
+    <string name="txt_info_chats">Para chatear, toca $ en la parte\n inferior de la pantalla. </string>
+</resources>

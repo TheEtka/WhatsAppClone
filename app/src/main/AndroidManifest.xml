@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aek.whatsapp">
+
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WhatsApp"
+        tools:targetApi="S">
+
+        <activity
+            android:name=".vista.mainfragments.chat.archivados.ListaChatsArchivadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.perfil.PerfilUsuarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.chat.PhotoMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.chat.ver.VerFotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.chat.ver.VerVideoPIPModeActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true" />
+        <activity
+            android:name=".vista.mainfragments.chat.ver.VerDocPDFActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.chat.ver.VerGifActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.estados.ver.VerListaEspectadoresEstadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.estados.ver.VerEstadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.estados.add.AddNewEstadoPhotoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.estados.add.AddNewEstadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vista.mainfragments.camera.CameraActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".vista.menu.AjustesActivity" />
+        <activity android:name=".vista.ContactosActivity" />
+        <activity android:name=".vista.cuenta.RegistroActivity" />
+        <activity android:name=".vista.cuenta.RecuperarContraseniaActivity" />
+        <activity
+            android:name=".vista.MainActivity"
+            android:theme="@style/MainTheme" />
+        <activity android:name=".vista.cuenta.LoginActivity" />
+        <activity
+            android:name=".vista.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/drawable-v23/ic_contactos_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable-v23/ic_galeria_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable-v24/ic_attach_file_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable-v24/ic_edit_gray.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable-v24/ic_more_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable-v24/ic_video_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/bg_chat_gradient.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/btn_send_message.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_archivar.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_arrow_up.xml" value="0.2865" />
+        <entry key="app/src/main/res/drawable/ic_attach_file.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_attach_file_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_audio.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_audio_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_block.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_call_white.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_check.xml" value="0.2725" />
+        <entry key="app/src/main/res/drawable/ic_contacto.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_contactos_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_edit_gray.xml" value="0.189" />
+        <entry key="app/src/main/res/drawable/ic_eye.xml" value="0.2725" />
+        <entry key="app/src/main/res/drawable/ic_file.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_file_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_galeria_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_gif.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_location.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_message_not_seen.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_message_seen.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_mic.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_more_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_palette_color.xml" value="0.2865" />
+        <entry key="app/src/main/res/drawable/ic_pause.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_picture_in_picture.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_send.xml" value="0.2865" />
+        <entry key="app/src/main/res/drawable/ic_silenciar_chat.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_thumb_down.xml" value="0.253" />
+        <entry key="app/src/main/res/drawable/ic_video_gray.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/ic_video_white.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/shape_circular_filtro.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/shape_layout_adjuntar_archivos.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/shape_mensaje.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/shape_mensaje_mio.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/shape_new_message.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/stoke_layout.xml" value="0.1885" />
+        <entry key="app/src/main/res/layout/activity_add_new_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_add_new_estado_photo.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ajustes.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_camera.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_lista_chats_archivados.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_perfil_usuario.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_photo_message.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_recuperar_contrasenia.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_doc_pdf.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_foto.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_gif.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_lista_espectadores_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_ver_video_pipmode.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_contacto_chat.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_contacto_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_filtro.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_gallery.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_gallery_small.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_audio.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_doc_pdf.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_gif.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_imagen.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_text.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/card_message_type_video.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_ajustes.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_camera.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_estados.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/layout_adjuntar_archivos_chat.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/layout_filtros.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/layout_gallery_camera.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/layout_opciones_estado.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/menu/menu_action_mode_chat.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/menu/menu_chat.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/menu/menu_perfil_usuario.xml" value="0.28229166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

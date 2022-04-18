@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".vista.mainfragments.estados.add.AddNewEstadoPhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.aek.whatsapp.vista.mainfragments.estados.canvas.CanvasImagenEstado
+            android:id="@+id/imgNewEstado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAddNewEstadoPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="26dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_send"
+            app:fabSize="normal"/>
+
+        <RelativeLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_transparent">
+
+            <ImageButton
+                android:id="@+id/btnFinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ripple_circular"
+                android:src="@drawable/ic_go_back"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUserEstado"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/btnFinish"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp"/>
+
+            <ImageButton
+                android:id="@+id/btnHabilitarPintar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/btnAddText"
+                android:background="@drawable/ripple_circular"
+                android:src="@drawable/ic_edit"/>
+
+            <TextView
+                android:id="@+id/btnAddText"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ripple_circular"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_toStartOf="@id/btnChangePintColor"
+                android:layout_centerVertical="true"
+                android:textAlignment="center"
+                android:text="T"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+            <ImageButton
+                android:id="@+id/btnChangePintColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ripple_circular"
+                android:src="@drawable/ic_palette_color"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:visibility="gone"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:hint="Añadir nuevo\nestado"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_filtros" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

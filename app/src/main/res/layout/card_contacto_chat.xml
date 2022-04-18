@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutStartContactoChat"
+        android:layout_width="?actionBarSize"
+        android:layout_height="?actionBarSize"
+        android:layout_marginEnd="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUserContact"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/imgContactoSelected"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_circular_filtro"
+            android:scaleX="0"
+            android:scaleY="0" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/layoutStartContactoChat"
+        android:gravity="center|start"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/txtNameContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/txtTimestampLastMessageContact"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTimestampLastMessageContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:textSize="8sp"
+                android:text="hace 2 horas"
+                tools:ignore="SmallSp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMessageSeen"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                app:tint="@android:color/darker_gray" />
+
+            <ImageView
+                android:id="@+id/imgTypeMessage"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                app:tint="@android:color/darker_gray"
+                android:layout_toEndOf="@id/imgMessageSeen"/>
+
+            <TextView
+                android:id="@+id/txtLastMessageContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/imgBadgeNewMessage"
+                android:layout_toEndOf="@id/imgTypeMessage"
+                android:maxLines="1"
+                android:textColor="@android:color/white"/>
+
+            <ImageButton
+                android:id="@+id/imgBadgeNewMessage"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:background="@drawable/shape_new_message"
+                android:layout_marginStart="8dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

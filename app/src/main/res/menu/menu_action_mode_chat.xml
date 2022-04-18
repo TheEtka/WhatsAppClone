@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menuAMDelete"
+        android:icon="@drawable/ic_delete"
+        android:title="Eliminar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuAMSilenciar"
+        android:icon="@drawable/ic_silenciar_chat"
+        android:title="Silenciar"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menuAMArchivar"
+        android:icon="@drawable/ic_archivar"
+        android:title="Archivar"
+        app:showAsAction="always"/>
+
+    <item
+        android:icon="@drawable/ic_more_white"
+        android:title="Más opciones"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:title="Marca como ne leido"/>
+            <item
+                android:id="@+id/menuAMSelectAll"
+                android:title="Seleccionar todos"/>
+        </menu>
+
+    </item>
+
+</menu>

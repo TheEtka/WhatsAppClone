@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgContacto"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/img_user_default"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNombreContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Nombre"/>
+
+        <TextView
+            android:id="@+id/txtEstadoContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnLlamadaContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ripple_circular"
+        android:src="@drawable/ic_call_white"
+        android:visibility="gone"
+        app:tint="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/btnVideoLlamadaContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ripple_circular"
+        android:src="@drawable/ic_video"
+        app:tint="@color/colorAccent" />
+
+</LinearLayout>

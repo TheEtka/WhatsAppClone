@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".vista.cuenta.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/divider"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="42dp"
+            android:src="@drawable/ic_call_white"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCorreoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_txt"
+            android:hint="Correo"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtContraseniaLogin"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_txt"
+            android:hint="Contraseña"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/btnRecuperarContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="end|center_vertical"
+            android:text="Recuperar Contraseña"
+            android:textColor="@android:color/darker_gray"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEntrarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrar"
+            android:enabled="false"
+            android:background="@drawable/selector_btn_entrar"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:alpha="0.5"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/btnRegistro"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="REGISTRARSE"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

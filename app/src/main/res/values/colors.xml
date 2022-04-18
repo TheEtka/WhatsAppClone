@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232d36</color>
+    <color name="colorPrimaryDark">#0f1e25</color>
+    <color name="colorAccent">#03BAA9</color>
+
+    <color name="colorGray">#9ea3a7</color>
+    <color name="colorGreen">#00cc3f</color>
+    <color name="colorSearchView">#364553</color>
+    <color name="bg_transparent">#32000000</color>
+    <color name="bg_transparent_50">#80000000</color>
+    <color name="colorCardChatMensaje">#212e36</color>
+    <color name="colorCardChatMensajeMio">#054640</color>
+    <color name="colorMessageSeen">#0083EC</color>
+    <color name="bgChatStartColorGradient">#193637</color>
+</resources>
